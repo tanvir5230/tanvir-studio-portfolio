@@ -26,13 +26,15 @@ body {
 /* section-1 */
 #section-1 {
   padding-top: 30px;
-  background: url("../image/header-bg.png") no-repeat center center;
+  background: url("../image/header-bg.png") no-repeat;
   background-size: 100%;
   overflow: auto;
 }
 #intro-text {
   text-align: justify;
-  padding: 12% 10px 0 12%;
+  margin-left: 10%;
+  margin-top: 12%;
+  padding-left: 7%;
   font-size: 1.1rem;
 }
 #intro-text h1 {
@@ -56,7 +58,7 @@ body {
   transition: all 0.4s;
 }
 #intro-img {
-  padding: 34px 39px;
+  padding: 5%;
 }
 /* section-1 */
 
@@ -64,8 +66,7 @@ body {
 #section-2 {
   overflow: auto;
   background-image: url("../image/biography-bg.png");
-  background-position: center center;
-  background-size: 100%;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
@@ -119,28 +120,28 @@ body {
   text-align: center;
   padding: 30px 10%;
   background-image: url("../image/footer-bg.png");
-  background-size: 100%;
-  background-position: center center;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 #section-4 h1 {
   margin-bottom: 15px;
 }
 .client {
-  margin: 10px 0;
+  margin: 20px 0;
 }
 .client-name {
   font-weight: bold;
   text-transform: capitalize;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 .client-title {
   color: rgb(129, 124, 124);
   text-transform: uppercase;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
 }
 .comment {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+  margin: 30px 0;
 }
 #form {
   background-image: linear-gradient(30deg, rgb(206, 63, 87), rgb(221, 30, 62));
@@ -148,17 +149,26 @@ body {
   color: white;
   border-radius: 10px;
   width: 70%;
-  margin: 30px auto;
+  margin: 0 auto;
 }
 #form a {
   text-decoration: none;
   font-size: 1.5rem;
   color: white;
 }
+#form a:hover {
+  background-color: white;
+  color: black;
+  padding: 0px 10px;
+  border-radius: 10%;
+  transform: all 0.5s;
+}
 /* section-4 */
 footer {
+  background-image: linear-gradient(to right, rgb(36, 13, 46), rgb(46, 39, 61));
   text-align: center;
-  padding: 30px 0;
+  padding: 20px 0;
+  color: white;
 }
 
 /* 
@@ -181,6 +191,25 @@ footer {
   .d-lg-none {
     display: none;
   }
+  /* section-1 */
+  #intro-text {
+    width: 50%;
+  }
+  #intro-img {
+    width: 50%;
+  }
+  /* section-1 */
+
+  /* section-2 */
+  #bio-text {
+    width: 50%;
+    margin: 15% 20px;
+  }
+  #bio-img {
+    max-width: 50%;
+    margin: 0 0 0 5%;
+  }
+  /* section-2 */
 }
 
 /* 
@@ -192,6 +221,25 @@ footer {
   .d-lg-none {
     display: none;
   }
+  /* section-1 */
+  #intro-text {
+    width: 50%;
+  }
+  #intro-img {
+    width: 50%;
+  }
+  /* section-1 */
+
+  /* section-2 */
+  #bio-text {
+    width: 50%;
+    margin: 15% 20px;
+  }
+  #bio-img {
+    max-width: 50%;
+    margin: 0 0 0 5%;
+  }
+  /* section-2 */
 }
 
 /* 
@@ -211,6 +259,21 @@ footer {
   */
 
 @media (min-width: 481px) and (max-width: 767px) {
+  .btn {
+    display: block;
+    margin: 15px auto;
+  }
+  .full-width {
+    width: 80%;
+    margin: 20px 10%;
+  }
+  .d-none {
+    display: none;
+  }
+  h1 {
+    text-align: center;
+  }
+  /* section-1 */
   #intro-text {
     padding: 0;
   }
@@ -220,31 +283,33 @@ footer {
   #intro-img {
     padding: 0;
   }
-  .btn {
-    display: block;
-    margin: 15px auto;
+  /* section-1 */
+
+  /* section-2 */
+  #bio-text {
+    margin-top: 10px;
+    padding: 20px 0;
   }
-  h1 {
-    text-align: center;
-  }
-  .full-width {
-    width: 80%;
-    margin: 20px 10%;
-  }
-  .d-none {
-    display: none;
-  }
+  /* section-2 */
+
+  /* section-3 */
+
   .latest-works img {
     display: block;
     width: 90%;
     margin: 20px auto;
   }
+  /* section-3 */
+
+  /* section-4 */
+
   #form {
     width: 95%;
   }
   #form a {
     font-size: 1.1rem;
   }
+  /* section-4 */
 }
 
 /* 
@@ -256,12 +321,6 @@ footer {
   .half-width {
     width: 100%;
   }
-  #intro-text {
-    padding: 0;
-  }
-  #intro-img {
-    padding: 0;
-  }
   .full-width {
     width: 80%;
     margin: 20px 10%;
@@ -269,15 +328,31 @@ footer {
   .d-none {
     display: none;
   }
+  /* section-1 */
+  #intro-text {
+    padding: 0;
+  }
+  #intro-img {
+    padding: 0;
+  }
+  /* section-1 */
+  #bio-text {
+    margin-top: 10px;
+  }
+
+  /* section-3 */
   .latest-works img {
     display: block;
     width: 90%;
     margin: 20px auto;
   }
+  /* section-3 */
+  /* section-4 */
   #form {
     width: 100%;
   }
   #form a {
     font-size: 1.1rem;
   }
+  /* section-4 */
 }
